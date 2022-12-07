@@ -1031,7 +1031,7 @@ color: #8E8E8E;
   box-sizing: border-box;
   color: #3C949E;
   justify-content: space-between;
-  margin-top: -5.2vh;
+  margin-top: -3.5vh;
 }
 
 #footer-icons {
@@ -1040,7 +1040,7 @@ color: #8E8E8E;
    display: flex;
    flex-direction: row; 
    align-items: center;
-   font-size: 3.66vw;
+   font-size: 3.36vw;
  }
  .footer-details{
  
