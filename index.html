@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="1.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+       <!-- Font -->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter|Roboto|Open Sans">
+           <!-- Bootstrap Font Icon CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+          <!-- Bootstrap js -->
+     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" defer></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+         crossorigin="anonymous"></script>
+         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        
+           <!-- Tailwind -->
+
+     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <title>Document</title>
+</head>
+
+<!-- Style for gallery -->
+<style>
+  .gallery-text{
+      width: 100vw;
+      display: flex;
+    justify-content: space-around;
+    font-style: italic;
+    color: white;
+    font-size: 2vw;
+  }
+  .gallery-text p{
+
+    color: #65AAA1; 
+    letter-spacing: 11px;
+  
+  }
+  @media screen and (max-width:768px) {
+    .gallery-text p{letter-spacing: 4px;}
+  }
+  .gallery-style{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+  }
+  .gallery-images{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    flex: 1 1 0%;
+  }
+  .gallery-images1{
+    z-index: 1;
+    transition-duration: 200ms;
+    filter: grayscale(50%);
+    height: 50%; 
+width: 22vw;
+  }
+
+
+
+  .gallery-images2{
+    z-index: 1;
+    transition-duration: 200ms;
+    filter: grayscale(50%);
+    height: 50%;
+    width: 22vw;
+
+  }
+  .gallery-images3{
+  z-index: 2;
+  display: flex;
+ 
+    transition-duration: 200ms;
+  filter: grayscale(50%);
+  position: absolute;
+  width: 26vw;
+
+  height: 70vh;
+  }
+  /* @media  screen and (min-width:1400px) {
+    .gallery-images3{
+      left: 7.6vw;
+    }
+    .gallery-style{
+      width: 25vw;
+    }
+  } */
+  .gallery-images1:hover ,.gallery-images2:hover ,.gallery-images3:hover{
+    filter: grayscale(0%);
+    transition-duration: 200ms;
+  }
+</style>
+<body>
+  <!-- Programmes by ayush -->
+    <div class="geet" id="body">
+
+
+
+  <div class="moto" id="moto" >
+
+    <img src="Logo_White/Logo_White.png" alt="Alcheringa" class="logo" id="logo" />
+
+    <h1 class="moto1" id="moto1">VOGUE NATION</h1>
+
+    <div class="moto2" id="moto2">
+  
+      <div>PEOPLE WILL STARE. </div>
+      <div>MAKE IT WORTH </div>
+      <div>THEIR WHILE.</div>
+      <div style="margin-top: 1vh;">-Harry Winston</div>
+        
+        
+        
+        
+     
+    </div>
+
+
+  </div>
+
+  <div class="shaper"     id="shaper"  >
+    <div class="leftshape" id="leftshape" >
+
+      <div><img class="V" id="v" src="top bg/V.png"  onmouseenter="visible()" onmouseleave="invisible()"  onmouseover="show()" alt=""/></div>
+
+      <div class="righttriangle"  onmouseover="leave()" onmouseout="show()"  onmouseenter="visible()" onmouseleave="invisible()"  >
+      </div>
+      <div class="box" id="box" onmouseover="leave()" onmouseout="show()"    onmouseenter="visible()" onmouseleave="invisible()">
+
+      </div>
+    </div>
+    <div class="animation"    onmouseenter="visible()" onmouseleave="invisible()">
+      <div class="hover1" id="option"  onmouseenter="visible()" onmouseleave="invisible()">
+        <ul class="option" onmouseover="leave()" >
+          <li> <a href="#main10">EVENTS</a> </li>
+
+          <li> <a href=""> REGISTRATION </a></li>
+
+          <li> <a href="#Gallery"> GALLERY</a></li>
+          <li> <a href="#TEAM"> OUR TEAM </a></li>
+
+          <li> <a href="#GETINTOUCH"> GET IN TOUCH </a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="rightshape" id="rightshape" onmouseenter="visible()" onmouseleave="invisible()" onmouseover="leave()" >
+      <div class="lefttriangle1" id="t1" onmouseover="leave()" onmouseout="leave()" ></div>
+      <div class="p1" onmouseenter="visible()" onmouseleave="invisible()" onmouseover="leave()" >
+        <div class="para" onmouseenter="visible()" onmouseleave="invisible()" onmouseover="leave()" >
+
+     <div onmouseover="leave()" onmouseout="show()">Vogue Nation, the fashion designing module, newly concieved by the
+      team of Alcheringa 2020 is an attempt to begin the search for the
+      all round champion of the Fashion Designing arena.</div>
+     <div onmouseover="leave()"  onmouseout="leave()"> This will be the race of the elite of the elite. This is where you
+      begin your trek to the top. </div>
+     <div onmouseover="leave()" onmouseout="leave()"> Three best of the best events especially tailored for the ones
+      destined for greatness. Etch your name into the GOLDEN history of
+      Alcheringa as the ultimate champion of the Fashion Module.</div>
+     <div onmouseover="leave()"  onmouseout="leave()">     Haute Couture, one of the flagship events of Alcheringa, along
+      with Glamour Nova, the photoshoot event, and the paper dress
+      desgning event, States of Dress. Claim all three and become the
+      first ever champion of the the Fashion Module of Alcheringa</div>
+          
+     
+        </div>
+
+      </div>
+      <div class="lefttriangle2"  onmouseover="leave()"  onmouseout="leave()"></div>
+      <div class="p2" onmouseenter="visible()" onmouseleave="invisible()"  onmouseover="leave()" onmouseout="leave()" > <span class="prize"
+          id="prize"> PRIZES </span><span class="it" id="it">Worth more than <span>RS.2,00,000</span> </span> </div>
+      <div class="triangle" id="triangle" onclick="press()" onmouseenter="visible()"
+        onmouseleave="invisible()" ></div>
+    </div>
+
+    <div class="triclick1" id="triclick1">
+
+      <li>Home</li>
+      <li>About Us</li>
+      <li>Events</li>
+      <li>Haute Couture</li>
+      <li>States of Dress</li>
+      <li>Glamour Nova</li>
+      <li>Style Gallery</li>
+      <li>Our Team</li>
+      <li>Get in Touch</li>
+
+
+    </div>
+
+
+
+    <div class="triclick2" id="triclick2">
+      <a class="close" href=""><i class="gg-close"></i></a>
+      <!-- <div class="cancel">X</div> -->
+<div class="cancel" id="cancel" onclick="cancel()">X</div>
+    </div>
+
+    <div class="programs">
+      <div class="program-imgs">
+          <div>
+              <img src="images/haute-couture.png" alt="" id="haute-couture-img" class="greyfilter">
+              <h1 class="hcimg-text" style="top: -15%; left: 22%;">HAUTE COUTURE</h1>
+          </div>
+          <img src="images/N.png" alt="" id="N-img">
+          <div>
+              <img src="images/states-of-dress.png" alt="" id="sod-img" class="greyfilter">
+              <h1 class="sodimg-text" style="top: -17%; left: 45%;">STATES <br>OF DRESS</h1>
+          </div>
+          <div>
+              <img src="images/glamour-culture.png" alt="" id="glamour-nova" class="greyfilter">
+              <h1 class="gcimg-text" style="bottom: 63%; left: -108%; text-align: right; ">GLAMOUR<br>NOVA
+              </h1>
+          </div>
+      </div>
+
+      <div class="program-detail-hc">
+          <img src="images/VN-logo.png" alt="" class="VN-logo">
+          <div class="program-card hc-card hide">
+              <img src="images/hc-icon2.svg" alt="" style="margin: 2vw; height: 9vw; width: 6.5vw;" class="hc-icon">
+              <h2 style="color: #721F11; margin-bottom: 5%;">Haute Couture</h2>
+              <div style="color: #328088;">
+                  Haute Couture, where the most glamorous<br> people show off their skills as they walk <br>the ramp
+                  and
+                  evoking all those creative <br>people out there to
+                  put on their thinking <br>caps and come out with the
+                  most <br>innovative theme
+                  based fashion show.
+              </div>
+          </div>
+          <div class="program-card sod-card hide">
+              <img src="images/sod-icon2.svg" alt="" style="margin: 2vw; height: 8vw; width: 13vw;">
+              <h2 style="color: #126800; margin-bottom: 5%;">States of Dress</h2>
+              <div style="color: #328088; font-family: 'Inter , Italics';">
+                  States of Dress, where you let your <br>creativity run wild as you design the best <br>outfit for
+                  your
+                  friend using only paper.<br> Put your origami and fashion skills to use<br> and come up with the
+                  perfect
+                  dress.
+              </div>
+          </div>
+          <div class="program-card gc-card hide">
+              <img src="images/gc-icon2.svg" alt="" style="margin: 2vw; height: 7vw; width: 12vw;" class="hc-icon">
+              <h2 style="color: #721F11; margin-bottom: 5%;">Glamour Nova</h2>
+              <div style="color: #328088;">
+                  Glamour Nova, where the most<br> glamorous people show off their skills as <br>they do elegant
+                  photoshoots
+                  at the exotic<br> locations of one of themost beautiful <br>colleges in India,<br> IIT Guwahati
+              </div>
+          </div>
+      </div>
+  </div>
+
+  </div>
+
+</div>
+
+ <!-- Rulebooklet by geet -->
+ <!-- HAUTE COTOUR  -->
+ <div class="main main10" id="main10">
+     <div class="Rulebook animation-element slide-left">
+         <div class="Rulebook-img">
+ 
+             <img src="./images/17.png" alt="">
+         </div>
+         <div class="Rulebook-title"> <p>Rulebooklet </p> </div>
+     </div>
+     <div class="Glamour-nova animation-element slide-right">
+         <div class="Glamour-nova-text">
+ 
+             <div class="Cards">
+                 <div class="Cards-Heading">
+                     THEME
+                 </div>
+            
+                 <div class="Cards-Details">
+                     The theme for prelims is Seven Deadly Sins. Use your creativity and imagination and choose your favourite sin and let your inner devil take over. The final round would be an open theme round.
+                 </div>
+             </div>
+           
+             <div class="Cards">
+                 <div class="Cards-Heading">
+                     TEAM COMPOSITION
+                 </div>
+          
+                 <div class="Cards-Details">
+                     Only 1 choreographer, make-up artist and maximum of 4 designer will be accepted from one team. The minimum age limit for models is 16 years.
+                 </div>
+             </div>
+             <div class="Cards">
+                 <div class="Cards-Heading">
+                     LIGHT & SOUND
+                 </div>
+                 <div class="Cards-Details">
+                     The teams are responsible for their own music and sequence. Music is to be submitted beforehand. If lighting facility is to be availed, one person of the group can supervise the lighting.
+                 </div>
+             </div>
+             <div class="Cards">
+                 <div class="Cards-Heading">
+                     REGISTRATIONS
+                 </div>
+                 <div class="Cards-Details">
+                     Every team has to submit a design of dress of their any previous performance or they can also submit the link to the performance while registering for the event at www.alcheringa.in/registrations.
+                 </div>
+             </div>
+             <div class="Cards">
+                 <div class="Cards-Heading">
+                     TIME LIMIT
+                 </div>
+                 <div class="Cards-Details">
+                     Every team will be given 5 minutes for each round. On exceeding the time limit, negative points will be awarded..
+                 </div>
+             </div>
+            
+       
+        
+             <div class="Cards">
+                 <div class="Cards-Heading">
+                     REWARDS
+                 </div>
+                 <div class="Cards-Details">
+                     Win attractive prizes worth more than Rs 1,12,000. Special Rewards will be given for Best Model, Best Choreographer, Best Makeup and Best Designer.
+                 </div>
+             </div>
+ 
+ 
+ 
+         </div>
+         <div class="banner2">
+             <p>HAUTE COUTURE</p>
+         </div>
+ 
+    
+         
+     </div>
+ </div>
+ <!-- STATES OF DRESS -->
+ <div class="main">
+ 
+ 
+     
+     <div class="Glamour-nova animation-element slide-left">
+         <div class="State-of-dresses-text">
+ 
+             <div class="Cards1">
+                 <div class="Cards-Heading">
+                     TEAM COMPOSITION
+                 </div>
+                 <div class="Cards-Details">
+                     Each team will have 3 members, one person, for whom the outfit will be designed and the others designer for the outfit. Registrations are done at www.alcheringa.in/registrations. 
+                 </div>
+             </div>
+           
+             <div class="Cards1">
+                 <div class="Cards-Heading">
+                     RAW MATERIALS
+                 </div>
+                 <div class="Cards-Details">
+                     Teams are needed to make a dress in 2 hours on a theme given on the spot from Newspapers, A4 sheets, ribbons, 
+                 </div>
+             </div>
+             <div class="Cards1">
+                 <div class="Cards-Heading">
+                     REWARDS
+                 </div>
+                 <div class="Cards-Details">
+                     Win attractive prices worth more than Rs 30,000.
+                 </div>
+             </div>
+            
+ 
+ 
+ 
+         </div>
+         <div class="banner3">
+             <p>STATE OF DRESSES</p>
+         </div>
+ 
+    
+         
+     </div>
+ 
+     <div class="Rulebook1 animation-element slide-right">
+         <div class="Rulebook1-img">
+ 
+             <img src="./images/17.png" alt="">
+         </div>
+         <div class="Rulebook-title1"> <p>Rulebooklet </p> </div>
+     </div>
+ 
+  </div>
+ 
+ <!-- GLAMOUR NOVA -->
+ <div class="main ">
+     <div class="Rulebook animation-element slide-left">
+         <div class="Rulebook-img">
+ 
+             <img src="./images/17.png" alt="">
+         </div>
+         <div class="Rulebook-title"> <p>Rulebooklet </p> </div>
+     </div>
+     <div class="Glamour-nova animation-element slide-right">
+         <div class="Glamour-nova-text">
+ 
+             <div class="Cards">
+                 <div class="Cards-Heading">
+                     VENUE
+                 </div>
+                 <div class="Cards-Details">
+                     Every team will be given 5 different locations in our campus to do photoshoot of models (duet photoshoot).
+                 </div>
+             </div>
+           
+             <div class="Cards">
+                 <div class="Cards-Heading">
+                     TEAM COMPOSITION
+                 </div>
+                 <div class="Cards-Details">
+                     Every Team has to have 2 models (1 male and 1 female), 2 designers and 1 photographer. Minimum age limit for models is 17 years.
+                 </div>
+             </div>
+             <div class="Cards">
+                 <div class="Cards-Heading">
+                     REGISTRATIONS
+                 </div>
+                 <div class="Cards-Details">
+                     Every team has to submit a design of dress of their any previous performance. The entries are submitted while registering for the event at ww.alcheringa.in/registrations.
+                 </div>
+             </div>
+             <div class="Cards">
+                 <div class="Cards-Heading">
+                     JUDGING CRITERIA
+                 </div>
+                 <div class="Cards-Details">
+                     The teams will be judged upon Creativity / Innovation in design, Standard of Design, Originality, Uniqueness, Product quality, finish and Photography
+                 </div>
+             </div>
+             <div class="Cards">
+                 <div class="Cards-Heading">
+                     TIME
+                 </div>
+                 <div class="Cards-Details">
+                     The Event will be on Day 2 of Alcheringa and the time will be from 10am-5pm. There is no theme to the event.
+                 </div>
+             </div>
+            
+       
+        
+             <div class="Cards">
+                 <div class="Cards-Heading">
+                     REWARDS
+                 </div>
+                 <div class="Cards-Details">
+                     Win attractive prizes worth more than Rs.35,000. Special Rewards will be given for the Best Model and Best Photographer.
+                 </div>
+             </div>
+ 
+ 
+ 
+         </div>
+         <div class="banner2">
+             <p>GLAMOUR NOVA </p>
+         </div>
+ 
+    
+         
+     </div>
+ </div>
+     <!-- gallery by balaji -->
+     <div class=" Gallery" id="Gallery" >
+         <div class="gallery-text">
+           <div class=" gallery-style"><p>STYLE</p></div>
+           <div class="  gallery-images">
+             <img src="images/left-pic.png" class="   gallery-images1"  alt="left">
+             <img src="images/right-pic.png" class="    gallery-images2" alt="right">
+             <img src="images/middle-pic.png" class="   gallery-images3" alt="middle">
+           </div>
+           <div class="gallery-style"><p>GALLERY</p></div>
+         </div>
+       </div>
+ <!-- footer by geet -->
+ <div class="FOOTER">
+    <div class="Team" id="TEAM">
+ 
+ 
+     <div class="Team-Heading"> <p>OUR TEAM </p> </div>
+     <div class="Team-Details">
+  <div class="Team-Card">
+     <div class="Image">
+     <img src="./images/17.png" alt="" class="Card-Image">
+     </div>
+     <div class="Card-Person Image">KARTIK SHARMA</div>
+     <div class="Card-details Image">HeadMedia and outreach</div>
+     <div class="Person-Number Image">+919996669723</div>
+  </div>
+  <div class="Team-Card">
+     <div class="Image">
+     <img src="./images/17.png" alt="" class="Card-Image">
+     </div>
+     <div class="Card-Person Image">KARTIK SHARMA</div>
+     <div class="Card-details Image">HeadMedia and outreach</div>
+     <div class="Person-Number Image">+919996669723</div>
+  </div> 
+  <div class="Team-Card">
+     <div class="Image">
+     <img src="./images/17.png" alt="" class="Card-Image">
+     </div>
+     <div class="Card-Person Image">KARTIK SHARMA</div>
+     <div class="Card-details Image">HeadMedia and outreach</div>
+     <div class="Person-Number Image">+919996669723</div>
+  </div>
+  <div class="Team-Card">
+     <div class="Image">
+     <img src="./images/17.png" alt="" class="Card-Image">
+     </div>
+     <div class="Card-Person Image">KARTIK SHARMA</div>
+     <div class="Card-details Image">HeadMedia and outreach</div>
+     <div class="Person-Number Image">+919996669723</div>
+  </div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+     </div>
+    </div>
+    <div class="footer-heading " id="GETINTOUCH">
+    <div class="Get-In">
+     <p> GET IN TOUCH</p>
+    </div>
+    <footer id="footer">
+     <div id="footer-icons">
+      <div> <i class="bi bi-youtube"></i></div>  
+       <div><i class="bi bi-facebook" ></i></div>  
+       <div><i class="bi bi-instagram" ></i></div>  
+        <div> <i class="bi bi-twitter" ></i></div>
+     </div>
+     <div class="footer-details">
+         Phone: +91-9079753354 <br> Email: publicrelations@alcheringa.in
+     </div>
+ </footer>
+ </div>
+ </div>
+ </body>
+ <!-- script for programme div  -->
+ <script>
+ 
+     $('#haute-couture-img').hover(function () {
+         gsap.to('.VN-logo', { display: 'none', opacity: 0, ease: 'slow.easeOut' })
+         gsap.to('.hc-card', { duration: .5, display: 'block', opacity: 1, ease: 'expo.easeIn' })
+     }, function () {
+         gsap.to('.hc-card', { duration: .2, display: 'none', opacity: 0, ease: 'Power1.easeIn' })
+         gsap.to('.VN-logo', { duration: .2, delay: .2, display: 'block', opacity: 1, ease: 'Power1.easeIn' })
+     })
+ 
+ 
+     $('#sod-img').hover(function () {
+         gsap.to('.VN-logo', { display: 'none', opacity: 0, ease: 'slow.easeOut' })
+         gsap.to('.sod-card', { duration: .5, display: 'block', opacity: 1, ease: 'Power1.easeIn' })
+ 
+     }, function () {
+         gsap.to('.sod-card', { duration: .2, display: 'none', opacity: 0, ease: 'Power1.easeOut' })
+         gsap.to('.VN-logo', { duration: .2, delay: .2, display: 'block', opacity: 1, ease: 'slow.easeIn' })
+     })
+ 
+ 
+     $('#glamour-nova').hover(function () {
+         gsap.to('.VN-logo', { display: 'none', opacity: 0, ease: 'slow.easeOut' })
+         gsap.to('.gc-card', { duration: .5, display: 'block', opacity: 1, ease: 'Power2.easeIn' })
+     }, function () {
+         gsap.to('.gc-card', { duration: .2, display: 'none', opacity: 0, ease: 'Power2.easeOut' })
+         gsap.to('.VN-logo', { duration: .2, delay: .2, display: 'block', opacity: 1, ease: 'slow.easeIn' })
+     })
+ 
+ 
+ </script>
+ <!-- slide-left animation -->
+ <script>
+ 
+     var $animation_elements = $('.animation-element');
+     var $window = $(window);
+     
+     function check_if_in_view() {
+       var window_height = $window.height();
+       var window_top_position = $window.scrollTop();
+       var window_bottom_position = (window_top_position + window_height);
+      
+       $.each($animation_elements, function() {
+         var $element = $(this);
+         var element_height = $element.outerHeight();
+         var element_top_position = $element.offset().top;
+         var element_bottom_position = (element_top_position + element_height);
+      
+         //check to see if this current container is within viewport
+         if ((element_bottom_position >= window_top_position) &&
+             (element_top_position <= window_bottom_position)) {
+           $element.addClass('in-view');
+         } else {
+           $element.removeClass('in-view');
+         }
+       });
+     }
+     
+     $window.on('scroll resize', check_if_in_view);
+     $window.trigger('scroll');
+     
+     </script>
+<script src="1.js"></script>
+<script>
+
+  function unfade(element) {
+  var op = 0.1;
+  element.style.display = 'block';
+  var timer = setInterval(function () {
+      if (op >= 1){
+          clearInterval(timer);
+      }
+      element.style.opacity = op;
+      element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+      op += op * 0.1;
+  }, 20);
+}
+
+  $('#haute-couture-img').hover(function () {
+      $('.VN-logo')[0].style.display = "none";
+      $('.sod-card')[0].style.display = "none";
+      $('.gc-card')[0].style.display = "none";
+      unfade($('.hc-card')[0]);
+  }, function () {
+      unfade($('.VN-logo')[0]);
+      $('.hc-card')[0].style.display = "none";
+  })
+
+
+  $('#sod-img').hover(function () {
+      $('.VN-logo')[0].style.display = "none";
+      $('.hc-card')[0].style.display = "none";
+      $('.gc-card')[0].style.display = "none";
+      unfade($('.sod-card')[0]);
+
+  }, function () {
+      unfade($('.VN-logo')[0]);
+      $('.sod-card')[0].style.display = "none";
+  })
+
+
+  $('#glamour-nova').hover(function () {
+      $('.VN-logo')[0].style.display = "none";
+      $('.sod-card')[0].style.display = "none";
+      $('.hc-card')[0].style.display = "none";
+      unfade($('.gc-card')[0]);
+  }, function () {
+      unfade($('.VN-logo')[0]);
+      $('.gc-card')[0].style.display = "none";
+  })
+
+
+</script>
+</html>
