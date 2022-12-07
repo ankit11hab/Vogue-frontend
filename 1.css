@@ -1107,7 +1107,7 @@ color: #8E8E8E;
      }
     
      .Card-details{
-       font-size: 3vw;
+       font-size: 3.2vw;
        text-align: left;
  
      }
@@ -1125,14 +1125,14 @@ color: #8E8E8E;
   
        width: 15vw;
       padding-top: 0px;
-     margin-left: 2vw;
+     margin-left: 4.5vw;
  
        height: 54vh;
      }
      .Card-Person, .Person-Number{
        text-align: left;
        font-weight: 400;
-       font-size: 3vw;
+       font-size: 3.2vw;
        line-height: 31px;
        
        color: #3C949E; 
@@ -1155,7 +1155,13 @@ color: #8E8E8E;
        
        z-index: 0;
       }
-   
+   .Team{
+    height: auto;
+   }
+   .Team-Heading{
+    font-size: 4vw;
+    height: 9vh;
+   }
      .footer-details{
  
  
@@ -1172,13 +1178,21 @@ color: #8E8E8E;
        display: none;
      }
      #GETINTOUCH{
-       margin-top: 50vh;
+       margin-top: 10vh;
      }
  }
- @media  screen and (max-width:500px) {
- 
-    #GETINTOUCH{
-       margin-top: 100vh;
-     }
+
+ @media screen and (max-width:465px) {
+  .Card-Person, .Person-Number{
+
+    font-size: 5vw;
+
+    
+    color: #3C949E; 
+  }
+     
+  .Card-details{
+    font-size: 5vw;
+
+  }
  }
- 
