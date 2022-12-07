@@ -1014,7 +1014,7 @@ color: #8E8E8E;
 
 /* footer */
 #footer {
-  height: 150px;
+  height: 180px;
 
   width: 100vw;
   display: flex;
@@ -1031,7 +1031,7 @@ color: #8E8E8E;
   box-sizing: border-box;
   color: #3C949E;
   justify-content: space-between;
-  margin-top: -3.5vh;
+  margin-top: -5.5vh;
 }
 
 #footer-icons {
@@ -1084,6 +1084,7 @@ color: #8E8E8E;
    margin: 0%;
  transform: skew(35deg);
  padding: 0px;
+ padding-left: 5.5vw;
  }
  .footer-heading{
    display: flex;
