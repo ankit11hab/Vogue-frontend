@@ -1031,7 +1031,7 @@ color: #8E8E8E;
   box-sizing: border-box;
   color: #3C949E;
   justify-content: space-between;
-  margin-top: -40px;
+  margin-top: -5.2vh;
 }
 
 #footer-icons {
@@ -1096,8 +1096,8 @@ color: #8E8E8E;
    .Team-Details{
  flex-wrap: wrap;
  height: auto;
-    padding-bottom: 5vh;
- padding-top: 5vh;
+ 
+ padding: 7vh 7vw;
  
  
      
@@ -1107,7 +1107,7 @@ color: #8E8E8E;
      }
     
      .Card-details{
-       font-size: 3.2vw;
+       font-size: 2.8vw;
        text-align: left;
  
      }
@@ -1119,37 +1119,31 @@ color: #8E8E8E;
        margin-bottom: 13vh;
      }
      .Team-Card{
+ padding: 5vh 5vw;
    
-   margin-top: 3vh;
-   margin-bottom: 3vh;
-  
-       width: 15vw;
-      padding-top: 0px;
-     margin-left: 4.5vw;
- 
-     margin-top: 7vh;
 
-       height: 54vh;
+  height: 70vh;
+       width: 35vw;
+    
+
      }
      .Card-Person, .Person-Number{
        text-align: left;
        font-weight: 400;
-       font-size: 3.2vw;
+       font-size: 2.8vw;
        line-height: 31px;
        
        color: #3C949E; 
      }
      .Card-Image{
-       width: 30vw;
-       height: 30vw;
-       filter: grayscale(100%);
-       animation: linear 1s ease-in infinite;
-       transition-delay: 0.7s;
+       width: 25vw;
+       height: 35vh;
+  
      }
      #footer-icons {
   /* flex-direction: column; */
   width: 40vw;
-        font-size: 5vw;
+        font-size: 4vw;
       
       }
  
@@ -1167,7 +1161,7 @@ color: #8E8E8E;
      .footer-details{
  
  
-       font-size: 3.5vw;
+       font-size: 2.8vw;
     
        
        color: #3C949E;
@@ -1176,9 +1170,7 @@ color: #8E8E8E;
        justify-content: space-evenly;
         display: flex;
      }
-     #footer-icons2{
-       display: none;
-     }
+  
      #GETINTOUCH{
        margin-top: 10vh;
      }
@@ -1196,5 +1188,13 @@ color: #8E8E8E;
   .Card-details{
     font-size: 5vw;
 
+  }
+  .Team-Card{
+    height: 90vh;
+  }
+  .Card-Image{
+    width: 60vw;
+    height: 35vh;
+  
   }
  }
