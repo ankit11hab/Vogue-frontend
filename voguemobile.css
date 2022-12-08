@@ -1,0 +1,178 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+#body {
+    background-color: #000000;
+    padding: 0%;
+}
+
+.mv-hide {
+    display: none;
+}
+
+.moto-wide {
+    display: none;
+}
+
+.motomobile {
+    display: block;
+}
+
+.moto1-mobile {
+    opacity: 1;
+    font-size: 4.5vw;
+    margin-top: -2.5vw;
+}
+
+
+.p2 {
+    display: none;
+}
+
+.p2-mobile {
+    opacity: 1;
+    position: absolute;
+    background-color: #4B1954;
+    top: 130vh;
+    height: 16.4vh;
+    width: 65vw;
+    left: 35vw;
+}
+
+#p2-mobile {
+    display: inline;
+}
+
+.prize-mobile {
+    text-align: center;
+    letter-spacing: NaNpx;
+    color: rgba(101, 170, 161, 1);
+    text-transform: capitalize;
+    opacity: 1;
+    font-size: larger;
+    position: absolute;
+    top: 3vh;
+    left: 32vw;
+    font-size: 2.4vw;
+}
+
+.it-mobile span {
+    color: rgba(60, 177, 190, 1);
+}
+
+.it-mobile {
+    font-style: italic;
+    text-align: center;
+    letter-spacing: NaNpx;
+    color: #24676F;
+    text-transform: capitalize;
+    opacity: 1;
+    font-size: larger;
+    position: absolute;
+    top: 8vh;
+    left: 22vw;
+    font-size: 2vw;
+}
+
+#programs-wide {
+    display: none;
+}
+.programs-mobile {
+    display: block;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    width: 100vw;
+    /* height: 100vh; */
+    background-color: #000000;
+    margin-top: -8%;
+    padding: 0%;
+}
+
+
+.program-imgs-mobile {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    margin-top: 0%;
+
+}
+
+#haute-couture-img-mv {
+    transition: 'filter';
+    transition-duration: 0.5s;
+    height: 90vh;
+    width: 45vw;
+}
+
+#N-img-mv {
+    position: absolute;
+    height: 90vh;
+    width: 75.5vw;
+    left: 34%;
+}
+
+#sod-img-mv {
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    transition: 'filter';
+    transition-duration: 0.5s;
+    position: absolute;
+    height: 88vh;
+    width: 55vw;
+    top: 1.5vw;
+    left: 45.6%;
+
+}
+
+#glamour-nova-mv {
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+    transition: 'filter';
+    transition-duration: 0.5s;
+    position: absolute;
+    height: 70vh;
+    width: 42vw;
+    left: 57vw;
+    top: 1vh;
+}
+
+.hcimg-text-mv,
+.gcimg-text-mv,
+.sodimg-text-mv {
+    position: relative;
+    overflow: auto;
+    text-align: left;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    font-size: 3.6vw;
+    font-weight: 100;
+    /* z-index: 1; */
+}
+
+.greyfilter {
+    filter: grayscale(1);
+}
+
+#sod-img-mv:hover {
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    filter: grayscale(0);
+}
+
+#haute-couture-img-mv:hover {
+    filter: grayscale(0);
+}
+
+#glamour-nova-mv:hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+    filter: grayscale(0);
+}
+
+.animation{
+    display: none;
+    visibility: hidden;
+}
+
+.p1{
+    font-size: 1.4vw;
+}
